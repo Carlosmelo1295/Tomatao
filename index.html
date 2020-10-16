@@ -11,24 +11,40 @@
 </head>
 
 <body>
-	<div class="containerBtn">
-		<button id="btnStart">Start</button>
-		<button id="btnStop">Stop</button>
+	<div class='containerOne'>
+		<div class="containerBtn">
+			<button id="btnStart">Start</button>
+			<button id="btnStop">Stop</button>
+		</div>
+
+		<div class="containerTime">
+			<p id="time">00:00</p>
+		</div>
+		<img id="arrow-down" src="./icons/hand-point-down-solid.svg" alt="hand">
 	</div>
 
-	<div class="containerTime">
-		<p id="time">25:00</p>
-		
+	<div class="containerTwo">
+		<div class="informations">
+			<h2>O pomodoro</h2>
+			<br>
+			<p>Pomodoro é um método de gerenciamento de tempo.
+				A técnica consiste na utilização de um cronômetro para dividir o trabalho em períodos de 25 minutos,
+				separados por
+				breves intervalos de 5 minutos.
+			</p>
+		</div>
+
+		<footer>
+			<p>Made with 💙 by Carlos Eduardo.</p>
+		</footer>
 	</div>
 
-	<footer>
-		<p>Made with 💙 by Carlos Eduardo.</p>
-	</footer>
+	<audio id="audio" src="./audios/Large Crowd Applause 01 (online-audio-converter.com).ogg"></audio>
+	<audio id="press" src="./audios/salamisound-6135928-valve-start-up-lever.mp3"></audio>
+	<audio id="tomataoAudio" src="audios/Soar-tomataaaooooo-tq1.mp3"></audio>
 
-<audio id="audio" src="./audios/Large Crowd Applause 01 (online-audio-converter.com).ogg"></audio>
-<audio id="press" src="./audios/salamisound-6135928-valve-start-up-lever.mp3"></audio>
-<audio id="tomataoAudio" src="audios/Soar-tomataaaooooo-tq1.mp3"></audio>
 	<script src="main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>
