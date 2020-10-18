@@ -49,7 +49,7 @@ function startCount() {
          seconds = "59";
          img.style.rotate = "360deg";
       }
-   }, 1000);
+   }, 10);
 
    img.style.width = "200px";
    img.style.transition = "500ms";
@@ -86,10 +86,5 @@ setTimeout(() => {
 
 const $arrow_down = document.querySelector("#arrow-down").addEventListener('click', () => {
    scrollTo(0, window.innerHeight)
-
-})
-
-const $arrow_up = document.querySelector("#arrow-up").addEventListener('click', () => {
-   scrollTo(top)
 
 })
