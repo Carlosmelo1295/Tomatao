@@ -49,7 +49,7 @@ function startCount() {
          seconds = "59";
          img.style.rotate = "360deg";
       }
-   }, 10);
+   }, 1000);
 
    img.style.width = "200px";
    img.style.transition = "500ms";
