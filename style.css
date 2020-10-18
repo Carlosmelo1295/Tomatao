@@ -9,7 +9,7 @@
 	--color-white: #ffffff;
 	--color-dark: #4834d4;
 	--font-big: 6em;
-	--font-small: 18pt
+	--font-small: 1.5em;
 }
 
 body,
@@ -18,24 +18,29 @@ html {
 	height: 100%;
 	background-color: var(--background);
 	color: var(--color-white);
-	font-family: 'VT323', monospace;
+	font-family: "VT323", monospace;
 	scroll-behavior: smooth;
-
 }
 
 .containerOne {
 	width: 100%;
 	height: 100vh;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-#arrow-down {
+#arrow-down,
+#arrow-up {
 	width: 50px;
 	position: absolute;
 	bottom: 0;
-	left: 50%;
-	translate: -50%;
+	right: 2em;
+}
 
+#arrow-up {
+	transform: rotate(180deg);
 }
 
 .containerBtn {
@@ -69,17 +74,25 @@ button {
 }
 
 .containerTwo {
-	height: 100vh;
 	background-color: var(--color-dark);
 	position: relative;
+	height: 100vh;
 }
 
 .informations {
 	line-height: 1.2em;
 	width: calc(100% - 40%);
-	margin: 0 auto;
 	font-size: var(--font-small);
+	font-family: monospace;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	padding-top: 10px;
 }
+ul,li{
+	list-style: none;
+	padding: 10px;
+}
+
 
 footer {
 	font-size: var(--font-small);

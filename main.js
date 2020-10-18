@@ -84,7 +84,12 @@ setTimeout(() => {
 }, 1000);
 
 
-const arrow_down = document.querySelector("#arrow-down").addEventListener('click', () => {
+const $arrow_down = document.querySelector("#arrow-down").addEventListener('click', () => {
    scrollTo(0, window.innerHeight)
+
+})
+
+const $arrow_up = document.querySelector("#arrow-up").addEventListener('click', () => {
+   scrollTo(top)
 
 })
