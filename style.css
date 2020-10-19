@@ -78,27 +78,24 @@ button {
 
 .containerTwo {
 	background-color: var(--color-dark);
-	position: relative;
-	height: auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 	padding: 2em;
+	
 }
 
 .informations {
 	line-height: 1.2em;
-	width: calc(100% - 40%);
 	font-size: var(--font-small);
 	font-family: monospace;
 	letter-spacing: 1px;
-	margin: 0 auto;
-	padding-top: 10px;
-}
-
-ul,
-li {
-	list-style: none;
+	margin: 5px;
 	padding: 10px;
+	flex: 1 1 auto;
+	background-color: rgba(0, 0, 0, 0.336);
+	text-align: center;
 }
 
 footer {
