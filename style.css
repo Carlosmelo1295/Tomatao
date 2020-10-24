@@ -5,9 +5,10 @@
 }
 
 :root {
-	--background: #ff4757;
-	--color-white: #ffffff;
-	--color-dark: #4834d4;
+	--background: #FC427B;
+	--color-white:#f1f2f6;
+	--color-dark:#3B3B98;
+	--color-deep-dark: #182C61;
 	--font-big: 6em;
 	--font-small: 1.5em;
 }
@@ -19,6 +20,7 @@ html {
 	color: var(--color-white);
 	font-family: "VT323", monospace;
 	scroll-behavior: smooth;
+	
 }
 
 .containerOne {
@@ -65,19 +67,28 @@ button {
 	color: var(--color-white);
 	padding: 10px;
 	margin: 20px;
-	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.404);
 	width: 8em;
 	height: 5em;
-	border-left: none;
-	border-top: none;
+	border: none;
 	border-radius: 10px;
-	border-width: 3px;
-	border-color: var(--color-white);
-	font-size: 1em;
+	font-size: 1.2em;
+	box-shadow: 5px 5px 2px var(--color-deep-dark);
+	font-family: "VT323", monospace;
+}
+button:active{
+	transform: scale(0.95);
+	transition: 300ms;
+}
+button:hover{
+	background-color: var(--color-white);
+	color: var(--color-dark);
+	box-shadow: 5px 5px 2px var(--color-dark);
 }
 
 .containerTwo {
-	background-color: var(--color-dark);
+	background-image: url(./backgrounds/Confetti-Doodles.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
