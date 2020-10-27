@@ -2,7 +2,6 @@
 const $btnStart = document.querySelector("#btnStart");
 const $btnStop = document.querySelector("#btnStop");
 const timePomodoro = document.querySelector("#time");
-
 const audio = document.querySelector("#audio");
 const pressBtn = document.querySelector("#press");
 const tomataoAudio = document.querySelector("#tomataoAudio");

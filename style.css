@@ -6,8 +6,8 @@
 
 :root {
 	--background: #FC427B;
-	--color-white:#f1f2f6;
-	--color-dark:#3B3B98;
+	--color-white: #f1f2f6;
+	--color-dark: #3B3B98;
 	--color-deep-dark: #182C61;
 	--font-big: 6em;
 	--font-small: 1.5em;
@@ -20,7 +20,7 @@ html {
 	color: var(--color-white);
 	font-family: "VT323", monospace;
 	scroll-behavior: smooth;
-	
+
 }
 
 .containerOne {
@@ -75,14 +75,30 @@ button {
 	box-shadow: 5px 5px 2px var(--color-deep-dark);
 	font-style: italic;
 }
-button:active{
+
+button:active {
 	transform: scale(0.95);
 	box-shadow: 5px 5px 2px transparent;
 
 }
-button:hover{
-	background-color: var(--color-white);
-	color: var(--color-dark);
+
+button:hover {
+	animation: lights 300ms infinite linear;
+	font-weight: 600;
+}
+
+@keyframes lights {
+	0% {
+		color: red;
+	}
+
+	50% {
+		color: rgb(255, 165, 86);
+	}
+
+	100% {
+		color:aqua;
+	}
 }
 
 .containerTwo {
@@ -94,7 +110,7 @@ button:hover{
 	justify-content: center;
 	align-items: center;
 	padding: 2em;
-	
+
 }
 
 .informations {
