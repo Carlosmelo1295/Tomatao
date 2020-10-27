@@ -61,7 +61,6 @@ function startCount() {
 //criar uma contagem decrescente de 5 min para a pausa
 
 //----------------------------------------------
-
 function stopCount() {
    clearInterval(interval);
    pressBtn.play();
@@ -77,7 +76,7 @@ document.querySelector(".containerTime").appendChild(img);
 
 setTimeout(() => {
    tomataoAudio.play();
-   img.src = "24692--ingredient_detail_ingredient-2.png";
+   img.src = "./icons/24692--ingredient_detail_ingredient-2.png";
    img.title = "Eu sou o tomatão e vou te ajudar na hora dos estudos!"
    img.style.width = "100px";
    img.style.cursor = "pointer"

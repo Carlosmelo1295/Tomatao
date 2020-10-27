@@ -71,18 +71,18 @@ button {
 	height: 5em;
 	border: none;
 	border-radius: 10px;
-	font-size: 1.2em;
+	font-size: 1em;
 	box-shadow: 5px 5px 2px var(--color-deep-dark);
-	font-family: "VT323", monospace;
+	font-style: italic;
 }
 button:active{
 	transform: scale(0.95);
-	transition: 300ms;
+	box-shadow: 5px 5px 2px transparent;
+
 }
 button:hover{
 	background-color: var(--color-white);
 	color: var(--color-dark);
-	box-shadow: 5px 5px 2px var(--color-dark);
 }
 
 .containerTwo {
