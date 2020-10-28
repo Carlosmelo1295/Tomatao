@@ -53,13 +53,11 @@ function startCount() {
 
    img.style.width = "200px";
    img.style.transition = "500ms";
-
    $btnStart.disabled = true; // Desabilitar botão após o click
 }
 
-//criar uma contagem decrescente de 5 min para a pausa
+//
 
-//----------------------------------------------
 function stopCount() {
    clearInterval(interval);
    pressBtn.play();
@@ -68,11 +66,10 @@ function stopCount() {
    $btnStart.disabled = false; //Habilitar "start" ao clicar em "stop"
 }
 
-//----------------------------------------------
+//
 
 let img = document.createElement("img");
-document.querySelector(".containerTime").appendChild(img);
-
+document.querySelector(".containerOne").appendChild(img);
 setTimeout(() => {
    tomataoAudio.play();
    img.src = "./icons/24692--ingredient_detail_ingredient-2.png";
@@ -81,6 +78,7 @@ setTimeout(() => {
    img.style.cursor = "pointer"
 }, 1000);
 
+//
 
 const $arrow_down = document.querySelector("#arrow-down").addEventListener('click', () => {
    scrollTo(0, window.innerHeight)

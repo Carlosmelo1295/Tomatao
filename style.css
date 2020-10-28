@@ -2,13 +2,15 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
 }
 
 :root {
-	--background: #FC427B;
+	--background: #fc427b;
 	--color-white: #f1f2f6;
-	--color-dark: #3B3B98;
-	--color-deep-dark: #182C61;
+	--color-dark: #3b3b98;
+	--color-deep-dark: #182c61;
 	--font-big: 6em;
 	--font-small: 1.5em;
 }
@@ -20,12 +22,56 @@ html {
 	color: var(--color-white);
 	font-family: "VT323", monospace;
 	scroll-behavior: smooth;
+}
 
+header {
+	width: 100%;
+	display: flex;
+	justify-content: right;
+	padding: 5px;
+	background-color: var(--color-deep-dark);
+}
+
+header img {
+	width: 40px;
+	float: right;
+	cursor: pointer;
+}
+
+li {
+	padding: 5px;
+	line-height: 1.5em;
+	margin-left: 10px;
+}
+
+#menu {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 50px;
+	font-size: var(--font-small);
+	display: none;
+	background-color: var(--color-deep-dark);
+	animation: slideMenu 500ms;
+}
+
+@keyframes slideMenu {
+	0% {
+		top: 200px;
+	}
+
+	100% {
+		top: 50px;
+	}
+}
+
+a {
+	color: var(--color-white);
 }
 
 .containerOne {
 	height: 100%;
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -35,17 +81,16 @@ html {
 #arrow-down {
 	width: 50px;
 	position: absolute;
-	bottom: 50px;
+	bottom: 10px;
 	display: flex;
 	justify-content: center;
 	z-index: 5;
 	animation: zoom 2s alternate infinite;
-
 }
 
 @keyframes zoom {
 	to {
-		transform: scale(1.0);
+		transform: scale(1);
 	}
 
 	from {
@@ -79,7 +124,6 @@ button {
 button:active {
 	transform: scale(0.95);
 	box-shadow: 5px 5px 2px transparent;
-
 }
 
 button:hover {
@@ -97,7 +141,7 @@ button:hover {
 	}
 
 	100% {
-		color:aqua;
+		color: aqua;
 	}
 }
 
@@ -110,19 +154,33 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 	padding: 2em;
-
+	position: relative;
 }
 
 .informations {
+	width: 200px;
+	height: 200px;
 	line-height: 1.2em;
 	font-size: var(--font-small);
 	font-family: monospace;
 	letter-spacing: 1px;
-	margin: 5px;
+	margin: 1.1em;
 	padding: 10px;
 	flex: 1 1 auto;
-	background-color: rgba(0, 0, 0, 0.336);
+	background-color: var(--color-white);
+	color: var(--color-deep-dark);
+	box-shadow: 10px 7px 2px var(--color-deep-dark);
 	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.informations:hover {
+	transform: scale(1.1);
+	transition: 200ms;
+	box-shadow: none;
 }
 
 footer {
@@ -131,4 +189,6 @@ footer {
 	text-align: center;
 	position: absolute;
 	bottom: 0;
+	color: var(--background);
+	background-color: var(--color-deep-dark);
 }
