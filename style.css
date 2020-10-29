@@ -68,6 +68,10 @@ li {
 
 a {
 	color: var(--color-white);
+	
+}
+a:hover{
+	animation: lights 300ms infinite alternate-reverse;
 }
 
 .containerOne {
@@ -86,6 +90,7 @@ a {
 	justify-content: center;
 	z-index: 5;
 	animation: zoom 2s alternate infinite;
+	cursor: pointer;
 }
 
 @keyframes zoom {
@@ -127,7 +132,7 @@ button:active {
 }
 
 button:hover {
-	animation: lights 300ms infinite linear;
+	animation: lights 200ms infinite alternate-reverse;
 	font-weight: 600;
 }
 
@@ -159,7 +164,7 @@ button:hover {
 
 .informations {
 	width: 200px;
-	height: 200px;
+	height: 250px;
 	line-height: 1.2em;
 	font-size: var(--font-small);
 	font-family: monospace;
@@ -181,6 +186,7 @@ button:hover {
 	transform: scale(1.1);
 	transition: 200ms;
 	box-shadow: none;
+	animation: lights 300ms infinite alternate-reverse;
 }
 
 footer {
