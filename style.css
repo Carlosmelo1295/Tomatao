@@ -68,9 +68,10 @@ li {
 
 a {
 	color: var(--color-white);
-	
+
 }
-a:hover{
+
+a:hover {
 	animation: lights 300ms infinite alternate-reverse;
 }
 
