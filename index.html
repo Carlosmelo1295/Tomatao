@@ -1,76 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tomatão</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="24692--ingredient_detail_ingredient-2.png"
-      type="image/x-icon"
-    />
-  </head>
 
-  <body>
-    <header>
-      <img id="icon-menu" src="icons/cardapio.svg" alt="menu" />
-      <ul id="menu">
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomatão</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="24692--ingredient_detail_ingredient-2.png" type="image/x-icon" />
+</head>
 
-    <div class="containerOne">
-      <div class="containerBtn">
-        <button id="btnStart">Start</button>
-        <button id="btnStop">Stop</button>
-      </div>
+<body>
+  <header>
+    <img id="icon-menu" src="icons/cardapio.svg" alt="menu" />
+    <ul id="menu">
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </header>
 
-      <div class="containerTime">
-        <p id="time">00:00</p>
-      </div>
-      <img id="arrow-down" src="./icons/hand-point-down-solid.svg" alt="hand" />
+  <div class="containerOne">
+    <div class="containerBtn">
+      <button id="btnStart">Start</button>
+      <button id="btnStop">Stop</button>
     </div>
 
-    <div class="containerTwo">
-      <div class="informations">🚀 Dê play no time de 25 minutos;</div>
+    <div class="containerTime">
+      <p id="time">00:00</p>
+    </div>
+    <img id="arrow-down" src="./icons/hand-point-down-solid.svg" alt="hand" />
+  </div>
 
-      <div class="informations">
-        📖 Concentre-se na sua tarefa, só na sua tarefa e apenas na sua tarefa;
-      </div>
+  <div class="containerTwo">
+    <div class="informations">🚀 Dê play no time de 25 minutos;</div>
 
-      <div class="informations">
-        ✔️ Terminados os 25 minutos (parabéns🎉🎉🎉, você terminou um
-        Pomodoro!), faça uma pausa, reprograme-se e volte ao passo 1;
-      </div>
-
-      <div class="informations">
-        🔁 Depois de 4 Pomodoros, faça uma pausa mais longa, de aproximadamente
-        10 minutos.
-      </div>
-
-      <footer>
-        <p>Made with 💙 by Carlos Eduardo.</p>
-      </footer>
+    <div class="informations">
+      📖 Concentre-se na sua tarefa, só na sua tarefa e apenas na sua tarefa;
     </div>
 
-    <audio
-      id="audio"
-      src="./audios/Large Crowd Applause 01 (online-audio-converter.com).ogg"
-    ></audio>
-    <audio
-      id="press"
-      src="./audios/salamisound-6135928-valve-start-up-lever.mp3"
-    ></audio>
-    <audio id="tomataoAudio" src="audios/Soar-tomataaaooooo-tq1.mp3"></audio>
+    <div class="informations">
+      ✔️ Terminados os 25 minutos, um alerta irá tocar(parabéns🎉🎉🎉, você terminou um Pomodoro!), faça uma pausa,
+      reprograme-se e volte ao passo 1;
+    </div>
 
-    <script src="./scripts/main.js"></script>
-    <script src="scripts/menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-  </body>
+    <div class="informations">
+      🔁 Depois de 4 Pomodoros, faça uma pausa mais longa, de aproximadamente
+      10 minutos.
+    </div>
+
+    <footer>
+      <p>Made with 💙 by Carlos Eduardo.</p>
+    </footer>
+  </div>
+
+  <audio id="audio" src="./audios/Large Crowd Applause 01 (online-audio-converter.com).ogg"></audio>
+  <audio id="press" src="./audios/salamisound-6135928-valve-start-up-lever.mp3"></audio>
+  <audio id="tomataoAudio" src="audios/Soar-tomataaaooooo-tq1.mp3"></audio>
+
+  <script src="./scripts/main.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+
 </html>

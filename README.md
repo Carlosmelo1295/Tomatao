@@ -11,7 +11,7 @@ helping you focus on work &amp; study
 
 <li>📖 Concentre-se na sua tarefa, só na sua tarefa e apenas na sua tarefa.</li>
 
-<li>✔️ Terminados os 25 minutos (parabéns🎉🎉🎉, você terminou um Pomodoro!), faça uma pausa, reprograme-se e volte ao passo 1.</li>
+<li>✔️ Terminados os 25 minutos, um alerta irá tocar(parabéns🎉🎉🎉, você terminou um Pomodoro!), faça uma pausa, reprograme-se e volte ao passo 1.</li>
 
 <li>🔁 Depois de 4 Pomodoros, faça uma pausa mais longa, de aproximadamente 10 minutos.</li>
 
