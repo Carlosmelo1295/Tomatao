@@ -44,10 +44,9 @@ function startCount() {
          $btnStart.disabled = false;
          audio.play();
          timePomodoro.innerHTML = `Pausa para o ☕`;
-         Swal.fire(`Etapa concluída!`);
+         Swal.fire("Bom trabalho!", "você completou um pomodoro", "success");
          minutes = "24";
          seconds = "59";
-         img.style.rotate = "360deg";
       }
    }, 1000);
 
@@ -62,7 +61,6 @@ function stopCount() {
    clearInterval(interval);
    pressBtn.play();
    img.style.width = "100px";
-
    $btnStart.disabled = false; //Habilitar "start" ao clicar em "stop"
 }
 
@@ -73,14 +71,13 @@ document.querySelector(".containerOne").appendChild(img);
 setTimeout(() => {
    tomataoAudio.play();
    img.src = "./icons/24692--ingredient_detail_ingredient-2.png";
-   img.title = "Eu sou o tomatão e vou te ajudar na hora dos estudos!"
+   img.title = "Eu sou o tomatão e vou te ajudar na hora dos estudos!";
    img.style.width = "100px";
-   img.style.cursor = "pointer"
+   img.style.cursor = "pointer";
 }, 1000);
 
 //
 
-const $arrow_down = document.querySelector("#arrow-down").addEventListener('click', () => {
-   scrollTo(0, window.innerHeight)
-
-})
+const $arrow_down = document.querySelector("#arrow-down").addEventListener("click", () => {
+   scrollTo(0, innerHeight);
+});
