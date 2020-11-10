@@ -55,6 +55,7 @@ li {
 	background-color: var(--color-deep-dark);
 	animation: slideMenu 500ms;
 	text-align: center;
+	z-index: 5;
 }
 
 @keyframes slideMenu {
@@ -90,7 +91,7 @@ a:hover {
 	bottom: 10px;
 	display: flex;
 	justify-content: center;
-	z-index: -1;
+	z-index: 1;
 	animation: zoom 2s alternate infinite;
 	cursor: pointer;
 }
