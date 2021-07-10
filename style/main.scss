@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+$background: #fc427b;
+$color-white: #f7f1e3;
+$color-deep-dark: #2f3542;
+$font-big: 6em;
+$font-small: 1.5em;
+
+@mixin flexDisplay() {
+    display: flex;
+    align-items: center;
+
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    color: $color-white;
+    font-family: "VT323", monospace;
+    scroll-behavior: smooth;
+}
+
+header {
+    @include flexDisplay;
+    padding: 5px;
+    background-color: $color-deep-dark;
+
+    img {
+        width: 40px;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+
+    #menu {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50px;
+        bottom: 0;
+        font-size: $font-big;
+        display: none;
+        background-color: $color-deep-dark;
+        animation: slideMenu 500ms;
+        text-align: center;
+        z-index: 5;
+
+        li {
+            line-height: 1.5em;
+
+        }
+
+        @keyframes slideMenu {
+            0% {
+                top: 0;
+            }
+
+            100% {
+                top: 50px;
+            }
+        }
+    }
+
+    a {
+        color: $color-white;
+
+        &:hover {
+            animation: lights 300ms infinite alternate-reverse;
+        }
+    }
+
+}
+
+.containerOne {
+    height: 100%;
+    @include flexDisplay;
+    flex-direction: column;
+    background-color: $background;
+
+    #arrow-down {
+        width: 50px;
+        position: absolute;
+        bottom: 10px;
+        z-index: 1;
+        animation: zoom 1s alternate infinite;
+        cursor: pointer;
+
+        @keyframes zoom {
+            to {
+                transform: scale(1);
+            }
+
+            from {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
+
+    .containerTime {
+        text-align: center;
+        margin-top: 4em;
+
+        #time {
+            font-size: $font-big;
+        }
+
+        #saidaPomodoros {
+            background-color: $color-deep-dark;
+            padding: 1rem;
+            font-size: $font-small;
+        }
+    }
+
+    button {
+        background-image: url(../backgrounds/Confetti-Doodles.svg);
+        background-attachment: fixed;
+        color: $color-white;
+        padding: 10px;
+        margin: 20px;
+        width: 8em;
+        height: 5em;
+        border: none;
+        border-radius: 10px;
+        font-size: 1em;
+        box-shadow: 5px 5px 2px $color-deep-dark;
+        font-style: italic;
+
+        &:active {
+            transform: scale(0.95);
+            box-shadow: 5px 5px 2px transparent;
+        }
+
+        &:hover {
+            animation: lights 200ms infinite alternate-reverse;
+            font-weight: 600;
+        }
+
+    }
+
+}
+
+@keyframes lights {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: rgb(255, 165, 86);
+    }
+
+    100% {
+        color: aqua;
+    }
+}
+
+
+.containerTwo {
+    background-image: url(../backgrounds/Confetti-Doodles.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flexDisplay;
+    flex-wrap: wrap;
+    padding: 1em;
+    position: relative;
+
+    .informations {
+        line-height: 1.2em;
+        font-size: $font-small;
+        margin: 1.1em;
+        padding: 10px;
+        flex: 1 1 auto;
+        background-color: $color-white;
+        color: $color-deep-dark;
+        box-shadow: 10px 7px 2px $color-deep-dark;
+        text-align: justify;
+        border-radius: 5px;
+        cursor: pointer;
+        @include flexDisplay;
+
+
+        &:hover {
+            animation: lights 300ms infinite alternate-reverse;
+        }
+    }
+}
+
+
+footer {
+    font-size: $font-small;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: $background;
+    background-color: $color-deep-dark;
+}

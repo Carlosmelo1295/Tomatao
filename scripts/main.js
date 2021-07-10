@@ -14,6 +14,8 @@ let minutes = "24";
 let seconds = "59";
 
 let size = 2;
+let saidaPomodoros = document.querySelector("#saidaPomodoros")
+let pomodoroNums = 1;
 
 function startCount() {
   pressBtn.play();
@@ -46,6 +48,9 @@ function startCount() {
       Swal.fire("Bom trabalho!", "você completou um pomodoro", "success");
       minutes = "24";
       seconds = "59";
+
+      saidaPomodoros.innerHTML = `Numero de pomodoros: ${pomodoroNums++}`
+
     }
   }, 1000);
 
